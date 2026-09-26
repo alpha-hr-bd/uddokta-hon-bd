@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login — UddoktaHon</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="nav"><a class="brand" href="index.html">Uddokta<span>Hon</span></a><a href="index.html">← Home</a></header>
+<main class="auth-wrap">
+  <section class="auth-card">
+    <p class="eyebrow">ACCOUNT</p><h1 id="formTitle">Create your account</h1>
+    <p id="formSub">Your unique UDD ID will be generated automatically.</p>
+    <form id="authForm">
+      <label>Full name<input id="name" required placeholder="Your name"></label>
+      <label>Email<input id="email" type="email" required placeholder="you@example.com"></label>
+      <label>Password<input id="password" type="password" minlength="6" required placeholder="Minimum 6 characters"></label>
+      <button class="btn primary wide" type="submit" id="submitBtn">Sign up</button>
+      <p class="switch"><span id="switchText">Already have an account?</span> <button type="button" class="linkbtn" id="switchBtn">Login</button></p>
+      <div id="msg" class="msg"></div>
+    </form>
+  </section>
+</main>
+<script type="module" src="js/auth.js"></script>
+</body></html>
